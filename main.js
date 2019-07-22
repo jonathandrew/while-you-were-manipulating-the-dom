@@ -1,37 +1,30 @@
-// TODO: Find the biggify numbers button on our page.
-const biggifyNumbersButton = document.querySelector('');
-//When it's clicked, launch `biggify`.
+
+const biggifyNumbersButton = document.querySelector('.big');
 biggifyNumbersButton.onclick = biggify;
-
-// TODO: Find the biggify numbers button on our page.
-const nasafyButton = document.querySelector('');
-//When it's clicked, launch `biggify`.
+const nasafyButton = document.querySelector('.blastoff');
 nasafyButton.onclick = nasafy;
-
-// TODO: Find the crazify string button on our page.
-const crazifyStringButton = document.querySelector('');
-//When it's clicked, launch `stringify`.
+const crazifyStringButton = document.querySelector('.crazy');
 crazifyStringButton.onclick = crazify;
-
-// TODO: Find the reverse string button on our page.
-const reverseStringButton = document.querySelector('');
-//When it's clicked, launch `reverse`.
+const reverseStringButton = document.querySelector('.reverse');
 reverseStringButton.onclick = reverse;
-
-// TODO: Find the lucky numbers button on our page.
-const luckyNumbersButton = document.querySelector('');
-//When it's clicked, launch `luckify`.
+const luckyNumbersButton = document.querySelector('.lucky');
 luckyNumbersButton.onclick = luckify;
-
-// TODO: Find the lucky numbers button on our page.
-const titleCaseButton = document.querySelector('');
-//When it's clicked, launch `titleify`.
+const titleCaseButton = document.querySelector('.titlec');
 titleCaseButton.onclick = titleify;
+const userInput = document.querySelector('.Input');
+const userValue = userInput.value()
+let i = 1
+
 
 
 function biggify(event) {
   // Make sure the page isn't reloaded when the user submits the form.
   event.preventDefault();
+  clearList()
+  while (i <= userValue){
+    console.log (userValue + 9000)
+    i = userValue + 1}
+  }
 
   /*
   TODO: Call the function `clearList`, which we have defined for you. You
@@ -70,11 +63,20 @@ function biggify(event) {
     inputting something else.
   */
   
-}
+
 
 function nasafy(event) {
   // Make sure the page isn't reloaded when the user submits the form.
   event.preventDefault();
+  clearList()
+  console.log(userValue)
+  let i = userValue
+  while (add >= 1){
+    console.log(i)
+  }
+  while (add >= 1){
+    console.log ( i - 1)
+  }
 
   /*
     TODO: Call the function `clearList`, which we have defined for you.
@@ -106,6 +108,15 @@ function nasafy(event) {
 function crazify(event) {
   // Make sure the page isn't reloaded when the user submits the form.
   event.preventDefault();
+  clearList()
+ i = 0
+while (i < userValue.length){
+  i = i + userValue.length(2)
+  userValue(add).toUpperCase;
+}
+printValue(i)
+i = i + 2
+}
   
   /*
   TODO: Call the function `clearList`, which we have defined for you.
@@ -143,12 +154,18 @@ function crazify(event) {
   Using the variable we saved above for the input box, clear its value.
   */
   
-}
   
 function reverse(event) {
   // Make sure the page isn't reloaded when the user submits the form.
   event.preventDefault();
-  
+  clearList()
+  i = 0;
+while(i < userValue.length){
+  i = i + userValue.length
+    }
+    printValue(i)
+    i = i -1
+    
   /*
     TODO: Call the function `clearList`, which we have defined for you.
   */
@@ -184,6 +201,9 @@ function reverse(event) {
 function luckify(event) {
   // Make sure the page isn't reloaded when the user submits the form.
   event.preventDefault();
+  clearList()
+  i = math.floor((math.random(userValue) +1))
+
 
 /*
   TODO: Call the function `clearList`, which we have defined for you.
